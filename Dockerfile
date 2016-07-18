@@ -70,6 +70,11 @@ wget curl bash openssl \
 && mkdir /var/cache/apk/ \
 && rm -rf /tmp/*
 
+RUN apk add vim \
+&& rm -rf /var/cache/apk/ \
+&& mkdir /var/cache/apk/ \
+&& rm -rf /tmp/*
+
 #ADD php.ini /etc/php7/
 COPY php.ini /etc/php7/conf.d/50-setting.ini
 COPY php-fpm.conf /etc/php7/php-fpm.conf
