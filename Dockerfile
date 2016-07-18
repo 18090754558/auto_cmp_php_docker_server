@@ -65,12 +65,7 @@ php7-sysvsem \
 php7-pdo \
 php7-bz2 \
 php7-mysqli \
-wget curl bash openssl \
-&& rm -rf /var/cache/apk/ \
-&& mkdir /var/cache/apk/ \
-&& rm -rf /tmp/*
-
-RUN apk add vim \
+vim wget curl bash openssl \
 && rm -rf /var/cache/apk/ \
 && mkdir /var/cache/apk/ \
 && rm -rf /tmp/*
