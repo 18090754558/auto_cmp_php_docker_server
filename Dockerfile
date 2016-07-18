@@ -70,12 +70,12 @@ vim wget curl bash openssl \
 && mkdir /var/cache/apk/ \
 && rm -rf /tmp/*
 
-#ADD php.ini /etc/php7/
-COPY php.ini /etc/php7/conf.d/50-setting.ini
-#COPY php-fpm.conf /etc/php7/php-fpm.conf
+ADD php.ini /etc/php7/
+ADD default_entry.sh /root/
+#COPY php.ini /etc/php7/conf.d/50-setting.ini
+COPY php-fpm.conf /etc/php7/php-fpm.conf
 
 #EXPOSE 9000
 
-# TODO
-#CMD ["/root/entry.sh"]
+CMD ["/root/default_entry.sh"]
 #CMD ["php-fpm7", "-F"]

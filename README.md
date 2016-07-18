@@ -18,7 +18,7 @@ https://github.com/wanjochan/misctools/raw/master/php-fpm-swoole-one-click.sh
 ```bash
 # install brew
 # http://brew.sh/
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/usr/bin/ruby -e "$(curl -fsSL https://github.com/Homebrew/install/raw/master/install)"
 
 # install php70 +fpm +opcache +swoole
 brew install php70 --with-fpm
