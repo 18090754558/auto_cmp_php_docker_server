@@ -66,8 +66,7 @@ php7-pdo \
 php7-bz2 \
 php7-mysqli \
 vim wget curl bash openssl \
-&& rm -rf /var/cache/apk/ \
-&& mkdir /var/cache/apk/ \
+&& rm -rf /var/cache/apk/* \
 && rm -rf /tmp/*
 
 COPY php.ini /etc/php7/
