@@ -67,16 +67,16 @@ php7-bz2 \
 php7-mysqli \
 vim wget curl bash openssl \
 && rm -rf /var/cache/apk/* \
-&& rm -rf /tmp/*
+&& rm -rf /tmp/* \
+&& ln -s /usr/sbin/php-fpm7 /usr/sbin/php-fpm
 
 COPY php.ini /etc/php7/
 #COPY php.ini /etc/php7/conf.d/50-setting.ini
 #ADD default_entry.sh /root/
 #COPY php-fpm.conf /etc/php7/php-fpm.conf
 
-ln -s /usr/sbin/php-fpm7 /usr/sbin/php-fpm
-
 #EXPOSE 9000
+#EXPOSE 9501
 
 #CMD ["/root/default_entry.sh"]
 #CMD ["php-fpm7", "-F"]
