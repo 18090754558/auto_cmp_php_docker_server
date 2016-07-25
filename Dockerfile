@@ -1,4 +1,4 @@
-FROM cmptech/auto_alpine_php7_runtime_with_swoole
+FROM cmptech/auto_alpine_php7_runtime_with_swoole_latest
 
 Maintainer Wanjo Chan ( http://github.com/wanjochan/ )
 
