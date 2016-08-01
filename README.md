@@ -15,7 +15,7 @@ http://github.com/swoole/swoole-src/
 
 * [LINUX] install php7 w+ swoole in user space:
 ```
-https://github.com/wanjochan/misctools/raw/master/php-fpm-swoole-one-click.sh
+wget --no-cache -q https://github.com/cmptech/cmp_app_server/raw/master/install-php-fpm-swoole-one-click.sh -O - | sh
 ```
 
 * [MAC] install php7 with brew
