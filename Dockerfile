@@ -29,7 +29,6 @@ php7-exif \
 php7-opcache \
 php7-posix \
 php7-session \
-php7-gd \
 php7-gettext \
 php7-json \
 php7-xml \
