@@ -17,7 +17,6 @@ php7-pcntl \
 php7-common \
 php7-xsl \
 php7-fpm \
-php7-gmagick \
 php7-mysqlnd \
 php7-redis \
 php7-snmp \
